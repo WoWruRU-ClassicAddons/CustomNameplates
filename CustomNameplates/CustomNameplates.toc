@@ -1,0 +1,4 @@
+## Interface:11200
+## Title: [|cff3fcf26K|r] Custom Nameplates
+## Notes: Display's Name/Health/Class above the head's of nearby target's
+CustomNameplates.lua
