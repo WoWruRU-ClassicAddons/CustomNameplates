@@ -1,5 +1,6 @@
 ﻿local showPets = false;
 local Enabled = true; 
+local last_update = GetTime();
 
 local Players = {};
 local Targets = {};
@@ -62,6 +63,7 @@ local function fillPlayerDB(name)
 end
 
 function CustomNameplates_OnUpdate()
+	if GetTime() - last_update < 0.1 then return end -- update nameplates every 0.1 seconds
 	
 	local frames = { WorldFrame:GetChildren() };
 	for _, namePlate in ipairs(frames) do
